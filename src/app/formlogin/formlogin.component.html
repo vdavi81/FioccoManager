@@ -1,0 +1,21 @@
+
+<div class="row">
+ <div class="medium-6 medium-centered large-4 large-centered columns">
+    <form [formGroup]="loginForm" (ngSubmit)="doLogin($event)">
+      <div class="row column log-in-form">
+        <h4 class="text-center">Inserisci le tue credenziali</h4>
+        <label>Username</label>
+        <input formControlName="user" type="text" placeholder="username">
+        <label>Password</label>
+        <input formControlName="password" type="password" placeholder="password">
+        <input id="show-password" type="checkbox"><label for="show-password">Show password</label>
+        <button type="submit" class="button expanded" >Entra</button> 
+       <p class="text-center"><a href="#">Hai dimenticato la password?</a></p> 
+     </div>
+      <p>{{Messaggio}}</p>
+    </form>
+ </div>
+</div>
+<br>
+<br>
+<br>
